@@ -8,7 +8,14 @@ const gameBoard = [
 
 let turn = 1;
 
+const mainBoard = document.querySelector('main');
 const cellIds = document.querySelectorAll('div');
+
+mainBoard.addEventListener('click', () => {
+    if (checkForWinner()) {
+	cellIds.forEach(cell => cell.style.pointerEvents = 'none');
+    }
+});
 
 cellIds.forEach((e) => {
     e.onclick = (e) => {
@@ -26,15 +33,13 @@ cellIds.forEach((e) => {
 }
 })
 
-const checkForWinner = () => {
-    if (gameBoard[0] === gameBoard[1] && gameBoard[0] === gameBoard[2] && typeof gameBoard[0] === 'string') {return;}
-    if (gameBoard[3] === gameBoard[4] && gameBoard[3] === gameBoard[5] && typeof gameBoard[3] === 'string') {return;}
-    if (gameBoard[6] === gameBoard[7] && gameBoard[6] === gameBoard[8] && typeof gameBoard[6] === 'string') {return;}
-    if (gameBoard[0] === gameBoard[3] && gameBoard[0] === gameBoard[6] && typeof gameBoard[0] === 'string') {return;}
-    if (gameBoard[1] === gameBoard[4] && gameBoard[1] === gameBoard[7] && typeof gameBoard[1] === 'string') {return;}
-    if (gameBoard[2] === gameBoard[5] && gameBoard[2] === gameBoard[8] && typeof gameBoard[2] === 'string') {return;}
-	if (gameBoard[0] === gameBoard[4] && gameBoard[0] === gameBoard[8] && typeof gameBoard[0] === 'string') {return;}
-	if (gameBoard[2] === gameBoard[4] && gameBoard[2] === gameBoard[6] && typeof gameBoard[2] === 'string') {return;}
+function checkForWinner () {
+    if (gameBoard[0] === gameBoard[1] && gameBoard[0] === gameBoard[2] && typeof gameBoard[0] === 'string') {return true;}
+    if (gameBoard[3] === gameBoard[4] && gameBoard[3] === gameBoard[5] && typeof gameBoard[3] === 'string') {return true;}
+    if (gameBoard[6] === gameBoard[7] && gameBoard[6] === gameBoard[8] && typeof gameBoard[6] === 'string') {return true;}
+    if (gameBoard[0] === gameBoard[3] && gameBoard[0] === gameBoard[6] && typeof gameBoard[0] === 'string') {return true;}
+    if (gameBoard[1] === gameBoard[4] && gameBoard[1] === gameBoard[7] && typeof gameBoard[1] === 'string') {return true;}
+    if (gameBoard[2] === gameBoard[5] && gameBoard[2] === gameBoard[8] && typeof gameBoard[2] === 'string') {return true;}
+	if (gameBoard[0] === gameBoard[4] && gameBoard[0] === gameBoard[8] && typeof gameBoard[0] === 'string') {return true;}
+	if (gameBoard[2] === gameBoard[4] && gameBoard[2] === gameBoard[6] && typeof gameBoard[2] === 'string') {return true;}
 }
-
-checkForWinner();

@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border: 1px solid black;
+    min-width: 10em;
+    min-width: 10em;
+}
+
+div {
+    border: 1px solid black;
+    min-width: 8em;
+    min-height: 8em;
+}
+
+button {
+    display: flex;
+    justify-self: center;
+}

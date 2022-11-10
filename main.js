@@ -7,3 +7,10 @@ cellIds.forEach((e) => {
         cellId.textContent = 'X';
 }
 })
+
+const gameBoard = [
+    o, o, o,
+    o, o, o,
+    o, o, o
+];
+

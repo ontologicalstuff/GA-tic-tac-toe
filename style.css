@@ -17,8 +17,10 @@ main {
 
 div {
     border: 1px solid black;
-    min-width: 8em;
-    min-height: 8em;
+    min-width: 8rem;
+    min-height: 8rem;
+    text-align: center;
+    font-size: 50px;
 }
 
 button {

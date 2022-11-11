@@ -4,26 +4,44 @@ body {
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
+    background-color: rgb(6, 57, 88);
 }
 
 main {
+    margin-top: 10rem;
     display: flex;
     justify-content: center;
     align-content: center;
     border: 1px solid black;
     min-width: 10em;
     min-width: 10em;
+    border-width: 10px;
+    border-radius: 10px;
+    border-color: rgb(205, 177, 19);
 }
 
 div {
-    border: 1px solid black;
+    border: 10px solid rgb(205, 177, 19);
     min-width: 8rem;
     min-height: 8rem;
     text-align: center;
+    color: peachpuff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 50px;
 }
 
 button {
+    margin-top: 2rem;
     display: flex;
     justify-self: center;
+    color: white;
+    font-size: 30px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(10, 33, 41);
+    padding: 1rem;
+}
+
+h1 {
+    color: peachpuff;
 }

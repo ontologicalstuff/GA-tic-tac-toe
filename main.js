@@ -40,14 +40,30 @@ cellIds.forEach((e) => {
 })
 
 function checkForWinner () {
-    if (holder.b[0] === holder.b[1] && holder.b[0] === holder.b[2] && typeof holder.b[0] === 'string') {return displayMessage.textContent = `${holder.b[0]} wins!`;};
-    if (holder.b[3] === holder.b[4] && holder.b[3] === holder.b[5] && typeof holder.b[3] === 'string') {return displayMessage.textContent = `${holder.b[3]} wins!`;}
-    if (holder.b[6] === holder.b[7] && holder.b[6] === holder.b[8] && typeof holder.b[6] === 'string') {return displayMessage.textContent = `${holder.b[6]} wins!`;}
-    if (holder.b[0] === holder.b[3] && holder.b[0] === holder.b[6] && typeof holder.b[0] === 'string') {return displayMessage.textContent = `${holder.b[0]} wins!`;}
-    if (holder.b[1] === holder.b[4] && holder.b[1] === holder.b[7] && typeof holder.b[1] === 'string') {return displayMessage.textContent = `${holder.b[1]} wins!`;}
-    if (holder.b[2] === holder.b[5] && holder.b[2] === holder.b[8] && typeof holder.b[2] === 'string') {return displayMessage.textContent = `${holder.b[2]} wins!`;}
-	if (holder.b[0] === holder.b[4] && holder.b[0] === holder.b[8] && typeof holder.b[0] === 'string') {return displayMessage.textContent = `${holder.b[0]} wins!`;}
-	if (holder.b[2] === holder.b[4] && holder.b[2] === holder.b[6] && typeof holder.b[2] === 'string') {return displayMessage.textContent = `${holder.b[2]} wins!`;}
+    if (holder.b[0] === holder.b[1] && holder.b[0] === holder.b[2] && typeof holder.b[0] === 'string') {
+        return displayMessage.textContent = `${holder.b[0]} wins!`;
+    };
+    if (holder.b[3] === holder.b[4] && holder.b[3] === holder.b[5] && typeof holder.b[3] === 'string') {
+        return displayMessage.textContent = `${holder.b[3]} wins!`;
+    }
+    if (holder.b[6] === holder.b[7] && holder.b[6] === holder.b[8] && typeof holder.b[6] === 'string') {
+        return displayMessage.textContent = `${holder.b[6]} wins!`;
+    }
+    if (holder.b[0] === holder.b[3] && holder.b[0] === holder.b[6] && typeof holder.b[0] === 'string') {
+        return displayMessage.textContent = `${holder.b[0]} wins!`;
+    }
+    if (holder.b[1] === holder.b[4] && holder.b[1] === holder.b[7] && typeof holder.b[1] === 'string') {
+        return displayMessage.textContent = `${holder.b[1]} wins!`;
+    }
+    if (holder.b[2] === holder.b[5] && holder.b[2] === holder.b[8] && typeof holder.b[2] === 'string') {
+        return displayMessage.textContent = `${holder.b[2]} wins!`;
+    }
+	if (holder.b[0] === holder.b[4] && holder.b[0] === holder.b[8] && typeof holder.b[0] === 'string') {
+        return displayMessage.textContent = `${holder.b[0]} wins!`;
+    }
+	if (holder.b[2] === holder.b[4] && holder.b[2] === holder.b[6] && typeof holder.b[2] === 'string') {
+        return displayMessage.textContent = `${holder.b[2]} wins!`;
+    }
     if (holder.turn === 10) return displayMessage.textContent = `It's a tie!`;
 }
 

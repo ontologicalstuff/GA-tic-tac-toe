@@ -58,10 +58,10 @@ function checkForWinner () {
     if (holder.b[2] === holder.b[5] && holder.b[2] === holder.b[8] && typeof holder.b[2] === 'string') {
         return displayMessage.textContent = `${holder.b[2]} wins!`;
     }
-	if (holder.b[0] === holder.b[4] && holder.b[0] === holder.b[8] && typeof holder.b[0] === 'string') {
+    if (holder.b[0] === holder.b[4] && holder.b[0] === holder.b[8] && typeof holder.b[0] === 'string') {
         return displayMessage.textContent = `${holder.b[0]} wins!`;
     }
-	if (holder.b[2] === holder.b[4] && holder.b[2] === holder.b[6] && typeof holder.b[2] === 'string') {
+    if (holder.b[2] === holder.b[4] && holder.b[2] === holder.b[6] && typeof holder.b[2] === 'string') {
         return displayMessage.textContent = `${holder.b[2]} wins!`;
     }
     if (holder.turn === 10) return displayMessage.textContent = `It's a tie!`;

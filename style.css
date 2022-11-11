@@ -21,6 +21,9 @@ main {
 }
 
 div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: 10px solid rgb(205, 177, 19);
     min-width: 8rem;
     min-height: 8rem;

@@ -9,13 +9,6 @@ const holder =  {
     turn: 1,
 };
 
-function displayWinner() {
-    if (checkForWinner()) {
-        return checkForWinner();
-    }
-}
-
-
 const mainBoard = document.querySelector('main');
 const cellIds = document.querySelectorAll('div');
 const newGameBtn = document.querySelector('button');
